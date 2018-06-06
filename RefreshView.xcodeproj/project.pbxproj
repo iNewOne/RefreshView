@@ -13,6 +13,8 @@
 		03CE76A720C6278100AB8020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CE76A620C6278100AB8020 /* Assets.xcassets */; };
 		03CE76AA20C6278100AB8020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CE76A820C6278100AB8020 /* LaunchScreen.storyboard */; };
 		03CE76AD20C6278100AB8020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE76AC20C6278100AB8020 /* main.m */; };
+		03CE76B520C6279A00AB8020 /* RefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE76B420C6279A00AB8020 /* RefreshView.m */; };
+		03CE76B820C6726F00AB8020 /* TXAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CE76B620C6726E00AB8020 /* TXAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		03CE76A920C6278100AB8020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03CE76AB20C6278100AB8020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CE76AC20C6278100AB8020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03CE76B320C6279A00AB8020 /* RefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshView.h; sourceTree = "<group>"; };
+		03CE76B420C6279A00AB8020 /* RefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshView.m; sourceTree = "<group>"; };
+		03CE76B620C6726E00AB8020 /* TXAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXAnimation.m; sourceTree = "<group>"; };
+		03CE76B720C6726E00AB8020 /* TXAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXAnimation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				03CE769E20C6278000AB8020 /* AppDelegate.m */,
 				03CE76A020C6278000AB8020 /* ViewController.h */,
 				03CE76A120C6278000AB8020 /* ViewController.m */,
+				03CE76B320C6279A00AB8020 /* RefreshView.h */,
+				03CE76B420C6279A00AB8020 /* RefreshView.m */,
+				03CE76B720C6726E00AB8020 /* TXAnimation.h */,
+				03CE76B620C6726E00AB8020 /* TXAnimation.m */,
 				03CE76A320C6278000AB8020 /* Main.storyboard */,
 				03CE76A620C6278100AB8020 /* Assets.xcassets */,
 				03CE76A820C6278100AB8020 /* LaunchScreen.storyboard */,
@@ -143,6 +153,8 @@
 			files = (
 				03CE76A220C6278000AB8020 /* ViewController.m in Sources */,
 				03CE76AD20C6278100AB8020 /* main.m in Sources */,
+				03CE76B520C6279A00AB8020 /* RefreshView.m in Sources */,
+				03CE76B820C6726F00AB8020 /* TXAnimation.m in Sources */,
 				03CE769F20C6278000AB8020 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +296,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VK3JH4D55V;
 				INFOPLIST_FILE = RefreshView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +314,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VK3JH4D55V;
 				INFOPLIST_FILE = RefreshView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

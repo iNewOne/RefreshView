@@ -108,11 +108,13 @@ NSTimeInterval const animationDuration = 0.5;
 
 - (void)nextStep{
     
+    //移除之前的layer
     [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
     
     CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.width / 2.0);
     CGFloat radius = self.bounds.size.width / 6.0;
     
+    //创建新的layer，之间有一定的角度分隔
     for (NSInteger i = 0; i <= 2; i++) {
         
         CGFloat start = M_PI_2 * 3 - M_PI * 2 / 3.0 * i;
@@ -132,6 +134,7 @@ NSTimeInterval const animationDuration = 0.5;
         
         [self.layer addSublayer:layer];
     }
+    
     
     for (CAShapeLayer *layer in _layerArrays) {
         //旋转
@@ -202,10 +205,6 @@ NSTimeInterval const animationDuration = 0.5;
         group.removedOnCompletion = NO;
         group.fillMode = kCAFillModeForwards;
         [layer addAnimation:group forKey:nil];
-        
-        
-        
-        
         
     }
 

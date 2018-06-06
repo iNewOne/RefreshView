@@ -7,7 +7,6 @@
 //
 
 #import "RefreshView.h"
-#import "TXAnimation.h"
 
 NSTimeInterval const animationDuration = 0.5;
 
